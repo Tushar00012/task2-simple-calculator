@@ -1,0 +1,63 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num1,num2;
+    char op;
+    cout<<"enter num1 : "<<endl;
+    cin>>num1;
+    cout<<"enter num2 : "<<endl;
+    cin>>num2;
+    cout<<"enter operator : "<<endl;
+    cin>>op;
+    switch(op){
+        case  '+':
+        cout<<"ans is : "<<num1<<" + "<<num2<<" = "<<num1+num2<<endl;
+        break;
+        case  '-':
+        cout<<"ans is : "<<num1<<" - "<<num2<<" = "<<num1-num2<<endl;
+        break;
+        case  '*':
+        cout<<"ans is : "<<num1<<" * "<<num2<<" = "<<num1*num2<<endl;
+        break;
+        case  '/':
+        cout<<"ans is : "<<num1<<" / "<<num2<<" = "<<num1/num2<<endl;
+        break;
+        default:
+        cout<<"invalid operator entered please try again......"<<endl;
+    }
+    return 0;
+
+}
+
+# Executables
+*.exe
+*.out
+*.app
